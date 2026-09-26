@@ -20,7 +20,7 @@ jobs:
 
       - name: Compile Python files
         run: |
-          python -m complieall -q pixelpost || {
+          python -m compileall -q pixelpost || {
            echo "Python compilation failed: systax error found in pixelpost"
            exit 1
           }
